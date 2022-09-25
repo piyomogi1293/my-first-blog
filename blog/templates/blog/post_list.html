@@ -6,7 +6,7 @@
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-        <QuerySet [<Post: My second post>, <Post: My first post>]>
+        <div>
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
@@ -14,5 +14,6 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
+        </div>
     </body>
 </html>
